@@ -1,5 +1,4 @@
-p = int(input('Введите длину пароля: '))
-
+number_char = int(input('Введите длину пароля: '))
 
 import random
 
@@ -12,10 +11,10 @@ def generate_good_password(length):
   # 3 повторить 2 length раз
   # 4 склеить символы в строку
   password = ''
-  for i in range(p):
+  for i in range(number_char):
     symbol = random.choice(alphabet)
     password += symbol
   return password
 
-password = generate_good_password(p)
+password = generate_good_password(number_char)
 print(password)
