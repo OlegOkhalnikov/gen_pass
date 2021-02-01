@@ -1,1 +1,1 @@
-# gen_pass
+password generator
